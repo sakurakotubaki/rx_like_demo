@@ -2,14 +2,18 @@ import 'package:flutter/material.dart';
 import '../viewmodels/audio_player_viewmodel.dart';
 import '../models/audio_state.dart';
 
+/// オーディオプレーヤーのUIを提供するウィジェット
 class AudioPlayerView extends StatefulWidget {
+  /// コンストラクタ
   const AudioPlayerView({super.key});
 
   @override
   _AudioPlayerViewState createState() => _AudioPlayerViewState();
 }
 
+/// AudioPlayerViewの状態を管理するState
 class _AudioPlayerViewState extends State<AudioPlayerView> {
+  /// ViewModelのインスタンス
   final _viewModel = AudioPlayerViewModel();
 
   @override
